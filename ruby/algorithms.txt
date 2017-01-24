@@ -1,0 +1,15 @@
+For a personal robot standing in an elevator:
+- Recall that we live on the 44th floor.
+- Position your vision sensors to capture the panel of buttons in view.
+- Focus your vision sensors on the button labeled "44".
+- Raise your pointing apparatus until it is hovering in front of the button labeled "44".
+- Move your pointing apparatus forward until it makes contact with the button labeled "44".
+- Move your pointing apparatus forward another 1/4 inch to press and activate the button.
+    - if the elevator is occupied by another passenger, ask if they would like you to press their floor.
+        - if they say yes and give their floor number, repeat the previous steps used to press "44", but for their floor number.
+            - wait for the elevator doors to close and for the elevator to move upwards.
+        - else wait for the elevator doors to close and for the elevator to move upwards.
+- Position your viewing sensor to view the elevator's display.
+- Until the display shows "44", wait inside the elevator.
+- When the display shows "44" you have reached our home floor.
+- When the elevator doors reopen at "44", proceed straight until you reach the end of the hall and the door labeled "44A".
