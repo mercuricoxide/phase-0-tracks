@@ -6,6 +6,10 @@ puts "Enter the fur color of the hamster"
 hcol = gets.chomp
 puts "Is the hamster a good candidate for adoption? (y/n)"
 adopt = gets.chomp
-puts "What is the estimated age of the hamster? Please enter a number only."
+puts "What is the estimated age of the hamster in years? Please enter a number only."
 age = gets.chomp
-print "#{age}"
+  if age.empty? 
+    age = nil
+  else age = age.to_i
+  end
+print age.nil?
