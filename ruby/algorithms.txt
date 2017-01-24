@@ -1,15 +1,32 @@
 For a personal robot standing in an elevator:
 - Recall that we live on the 44th floor.
-- Position your vision sensors to capture the panel of buttons in view.
+- Position your vision sensors until you capture the panel of buttons in view.
+- Position your chassis towards the panel of buttons.
 - Focus your vision sensors on the button labeled "44".
 - Raise your pointing apparatus until it is hovering in front of the button labeled "44".
 - Move your pointing apparatus forward until it makes contact with the button labeled "44".
 - Move your pointing apparatus forward another 1/4 inch to press and activate the button.
     - if the elevator is occupied by another passenger, ask if they would like you to press their floor.
-        - if they say yes and give their floor number, repeat the previous steps used to press "44", but for their floor number.
-            - wait for the elevator doors to close and for the elevator to move upwards.
-        - else wait for the elevator doors to close and for the elevator to move upwards.
+        - if they agree and give their floor number, repeat the previous steps used to press "44", but for their floor number.
+            - then wait for the elevator doors to close and for the elevator to move upwards.
+        - else, wait for the elevator doors to close and for the elevator to move upwards.
 - Position your viewing sensor to view the elevator's display.
 - Until the display shows "44", wait inside the elevator.
 - When the display shows "44" you have reached our home floor.
 - When the elevator doors reopen at "44", proceed straight until you reach the end of the hall and the door labeled "44A".
+
+
+How to read a book on a Kindle at home:
+- Recall where you last placed your Kindle.
+    - if you can recall where you last placed the Kindle, then retrieve it.
+    - if you cannot recall where you last placed the Kindle, then search until you find it.
+        - if you are unable to find the Kindle after 20 minutes or more of searching, pursue another activity and disregard the following instructions.
+- Decide on a comfortable place to either sit or lie down.
+- Sit or lie down in the chosen place.
+- Power on the kindle by pressing the button at the bottom.
+- Press the home-shaped symbol on the top-left corner of the touch screen to go to your library of books.
+- Analyze your emotions to determine which type of book you would like to read.
+- Look at the books in your library until a book matches the emotion you determined.
+- Select the matching book by pressing the image of it on the touch screen.
+- Read the book.
+- Enjoy.
