@@ -1,3 +1,28 @@
 body {
-  background-color: lightblue;
+  background-image: url("https://octodex.github.com/images/octocat-de-los-muertos.jpg");
 }
+
+h1, h2 {
+  color: #FF0000;
+  font-family: Helvetica;
+}
+
+p {
+  padding: 15px;
+}
+
+.column-1 {
+  background-color: lightblue;
+  border: 10px solid red;
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+  margin-left: 50px;
+}
+.column-2 {
+ background-color: yellow;
+ border: 10px solid navy;
+ display: inline-block;
+ vertical-align: top;
+ width: 35%;
+}  
