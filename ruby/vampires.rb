@@ -1,5 +1,12 @@
+#process multiple users
+
+puts "How many employees will be processed?"
+num = gets.chomp.to_i
+counter = 1
+
 #user input
 
+def determine_vampire
 puts "What is your name?"
 name = gets.chomp
 puts "How old are you?"
@@ -23,5 +30,17 @@ elsif age != 2017-dob && (garlic == "n" || enroll == "n")
   puts "Probably a vampire"
 else puts "Results inconclusive"
 end
+
+end
+
+#end program after every user has been processed
+
+while counter < num do determine_vampire
+counter += 1
+end
+
+#run program
+puts determine_vampire
+
 
 
