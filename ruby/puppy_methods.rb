@@ -46,6 +46,10 @@ class Puppy
     end
   end
 
+  def initialize
+    puts "Initializing new puppy instance ..."
+  end
+
 end
 
 dachshund = Puppy.new
@@ -59,4 +63,41 @@ p dachshund.roll_over
 p dachshund.dog_years(7)
 
 puts dachshund.dog_commands
+
+class Dog
+
+  def clean(body_part)
+    puts "The dog is cleaning his #{body_part}" 
+  end
+
+  def poop
+    puts "The dog is pooping"
+  end
+
+  def initialize
+    puts "Initializing new Dog instance ..."
+  end
+    
+  end
+
+array = []
+
+50.times do 
+  dogs = Dog.new
+  array << dogs
+end
+
+array.each do |i|
+  i.poop
+  i.clean("leg")
+end
+
+
+
+
+
+
+
+
+
 
