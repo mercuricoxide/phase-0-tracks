@@ -32,12 +32,11 @@
 def create_list(list)
   list = list.split(" ")
   qty = 1
-  map = {}
+  groceries = {}
   list.each do |items|
-    map[items] = 1
-    p map
+    groceries[items] = 1
   end
-  return map
+  return groceries
 end
 
 #grocery_list = create_list("carrots apples cereal pizza")
@@ -45,7 +44,7 @@ end
 #puts grocery_list
 #puts grocery_list.class
 
-def add_item(grocery_list, new_item, qty)
+def modify_item(grocery_list, new_item, qty)
   grocery_list[new_item] = qty
   return grocery_list
 end
@@ -59,10 +58,11 @@ end
 
 #puts remove_item(grocery_list,"orange")
 
-def change_qty(grocery_list, item, qty)
-  grocery_list[item] = qty
-  return grocery_list
-end
+#Refactor this, method is the same for add_item. If you type an existing item in the function, it updates it. If you type a new item in the function, it adds the new item and quantity to the hash.
+# def change_qty(grocery_list, item, qty)
+#   grocery_list[item] = qty
+#   return grocery_list
+# end
 
 #puts change_qty(grocery_list, "carrots", 2)
 
@@ -71,7 +71,7 @@ def pretty_list(grocery_list)
   puts "Here is your grocery list:"
   puts "=============================="
   grocery_list.each do |item, qty|
-    puts "Purchase #{qty} #{item}'s"
+    puts "Purchase #{qty} #{item}"
   end
   puts "##############################"
 end
@@ -80,16 +80,16 @@ end
 # Test Code
 
 grocery_list = create_list("lemonade tomatoes onions ice_cream")
-puts change_qty(grocery_list,"lemonade",2)
-puts change_qty(grocery_list,"tomatoes",3)
-puts change_qty(grocery_list,"ice_cream",4)
+puts modify_item(grocery_list,"lemonade",2)
+puts modify_item(grocery_list,"tomatoes",3)
+puts modify_item(grocery_list,"ice_cream",4)
 puts remove_item(grocery_list,"lemonade")
-puts change_qty(grocery_list,"ice_cream",1)
+puts modify_item(grocery_list,"ice_cream",1)
 puts pretty_list(grocery_list)
 
 # Reflect
 
-# - This challenge I learned that pseudocode provides a blueprint to the overall program and is not something that should be glossed over.
+# - This challenge I learned that pseudo-code provides a blueprint to the overall program and is not something that should be glossed over.
 # - Arrays and Hashes allow us to manipulate data that are grouped in sets, though them being a set requires extra steps of iteration.
 # - A method returns the arguments that the user provides when calling the method.
 # - You can pass strings and integers into methods as arguments, as long as those arguments are defined within the method (or within a previous method you are calling from).
