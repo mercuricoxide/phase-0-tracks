@@ -97,5 +97,11 @@ bobby = Santa.new("male", "black", "yew", 180)
 p bobby
 p bobby.get_mad_at("Prancer")
 
+50.times do 
+  santas << Santa.new(example_genders.sample, example_ethnicities.sample, example_sleighs.sample, example_weights_pounds.sample)
+end
+
+p santas
+
 
 
