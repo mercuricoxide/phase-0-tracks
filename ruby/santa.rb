@@ -8,16 +8,76 @@ class Santa
     puts "That was a good #{cookie} cookie!"
   end
 
+  def celebrate_birthday
+    @age += 1
+  end
+
+  def get_mad_at(reindeer)
+    new_reindeer_ranking = @reindeer_ranking.unshift(reindeer_ranking.delete_at(reindeer_ranking.index(reindeer))).rotate(1)
+  end
+
   def initialize(gender, ethnicity, sleigh, weight)
     puts "Initializing Santa instance..."
     @gender = gender
     @ethnicity = ethnicity
     @sleigh = sleigh
     @weight = weight
+    @reindeer_ranking = ["Rudolf", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+  @age = 0
   end
 
-  @reindeer_ranking = ["Rudolf", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-  @age = 0
+  #getter methods for attributes
+
+  def gender
+    @gender
+  end
+
+  def ethnicity
+    @ethnicity
+  end
+
+  def sleigh
+    @sleigh
+  end
+
+  def weight
+    @weight
+  end
+
+  def reindeer_ranking
+    @reindeer_ranking
+  end
+
+  def age
+    @age
+  end
+
+  #setter methods for attributes
+
+  def gender=(new_gender)
+    @gender = new_gender
+  end
+
+   def ethnicity=(new_ethnicity)
+    @ethnicity = new_ethnicity
+  end
+
+  def sleigh=(new_sleigh)
+    @sleigh = new_sleigh
+  end
+
+  def weight=(new_weight)
+    @weight = new_weight
+  end
+
+  def reindeer_ranking=(new_reindeer_ranking)
+    @reindeer_ranking = new_reindeer_ranking
+  end
+
+  def age=(new_age)
+    @age = new_age
+  end
+
 
 end
 
@@ -30,4 +90,10 @@ example_genders.length.times do |i|
 santas << Santa.new(example_genders[i], example_ethnicities[i], example_sleighs[i], example_weights_pounds[i])
 end
 
-p santas[2]
+bobby = Santa.new("male", "black", "yew", 180)
+
+p bobby
+p bobby.get_mad_at("Prancer")
+
+
+
