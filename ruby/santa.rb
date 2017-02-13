@@ -1,5 +1,7 @@
 class Santa
 
+  attr_accessor :gender, :ethnicity, :sleigh, :weight, :reindeer_ranking
+
   def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
   end
@@ -28,55 +30,55 @@ class Santa
 
   #getter methods for attributes
 
-  def gender
-    @gender
-  end
+  # def gender
+  #   @gender
+  # end
 
-  def ethnicity
-    @ethnicity
-  end
+  # def ethnicity
+  #   @ethnicity
+  # end
 
-  def sleigh
-    @sleigh
-  end
+  # def sleigh
+  #   @sleigh
+  # end
 
-  def weight
-    @weight
-  end
+  # def weight
+  #   @weight
+  # end
 
-  def reindeer_ranking
-    @reindeer_ranking
-  end
+  # def reindeer_ranking
+  #   @reindeer_ranking
+  # end
 
-  def age
-    @age
-  end
+  # def age
+  #   @age
+  # end
 
   #setter methods for attributes
 
-  def gender=(new_gender)
-    @gender = new_gender
-  end
+  # def gender=(new_gender)
+  #   @gender = new_gender
+  # end
 
-   def ethnicity=(new_ethnicity)
-    @ethnicity = new_ethnicity
-  end
+  #  def ethnicity=(new_ethnicity)
+  #   @ethnicity = new_ethnicity
+  # end
 
-  def sleigh=(new_sleigh)
-    @sleigh = new_sleigh
-  end
+  # def sleigh=(new_sleigh)
+  #   @sleigh = new_sleigh
+  # end
 
-  def weight=(new_weight)
-    @weight = new_weight
-  end
+  # def weight=(new_weight)
+  #   @weight = new_weight
+  # end
 
-  def reindeer_ranking=(new_reindeer_ranking)
-    @reindeer_ranking = new_reindeer_ranking
-  end
+  # def reindeer_ranking=(new_reindeer_ranking)
+  #   @reindeer_ranking = new_reindeer_ranking
+  # end
 
-  def age=(new_age)
-    @age = new_age
-  end
+  # def age=(new_age)
+  #   @age = new_age
+  # end
 
 
 end
