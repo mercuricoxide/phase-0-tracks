@@ -26,3 +26,24 @@ for (var i = 0; i < names.length; i++) {
 }
 
 console.log(horses);
+
+//create a function for cars
+
+function Car(make, model, color) {
+  this.make = make;
+  this.model = model;
+  this.color = color;
+  this.go = function() {console.log("Vrroom!")};
+  this.stop = function() {console.log("Skrt!")};
+}
+
+var blueCar = new Car("Toyota", "Celica", "blue");
+console.log(blueCar);
+blueCar.go();
+blueCar.stop();
+
+var redCar = new Car("Honda", "Civic", "red");
+var bigCar = new Car("Cadillac", "STS", "black");
+
+console.log(redCar)
+console.log(bigCar)
