@@ -67,6 +67,7 @@ p a.split.join(" ")
 # (What is the significance of the number 122 in relation to the character z?)
 a = "z"
 p a.ord
+#122 is the ASCII value of "z"
 
 
 # "How many times does the letter 'a' appear in this string?".<???>
