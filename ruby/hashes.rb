@@ -65,7 +65,7 @@ if change == "name"
     puts "Please update"
     pets_change = gets.chomp
     client_info[:pets] = pets_change
-  else change == "done"
+  else change == "none"
   end
 
 p client_info
