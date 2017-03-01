@@ -32,9 +32,8 @@
 def create_list(list)
   groceries = {}
   array = list.split(" ")
-  qty = 1
   array.each do |items|
-    groceries[items] = qty
+    groceries[items] = 1
   end
   return groceries
 end
@@ -43,12 +42,12 @@ end
 
 grocery_list = create_list("carrots apples cereal pizza")
 
-def add_item(grocery_list, new_item, qty=1)
-  grocery_list[new_item] = qty
+def modify_list(grocery_list, item, qty=1)
+  grocery_list[item] = qty
   return grocery_list
 end
 
-puts add_item(grocery_list,"orange", 2)
+puts modify_list(grocery_list,"orange", 2)
 
 def remove_item(grocery_list, item)
   grocery_list.delete(item)
@@ -57,12 +56,12 @@ end
 
 #puts remove_item(grocery_list, "orange")
 
-def modify_item(grocery_list, item, qty)
-  grocery_list[item] = qty
-  return grocery_list
-end
+# def modify_item(grocery_list, item, qty)
+#   grocery_list[item] = qty
+#   return grocery_list
+# end
 
-puts modify_item(grocery_list,"orange", 1)
+puts modify_list(grocery_list,"orange", 1)
 
 def print_list(grocery_list)
   puts "#########################"
@@ -74,6 +73,16 @@ def print_list(grocery_list)
 end
 
 print_list(grocery_list)
+
+
+# Reflect
+
+# - This challenge I learned that pseudo-code provides a blueprint to the overall program and is not something that should be glossed over.
+# - Arrays and Hashes allow us to manipulate data that are grouped in sets, though them being a set requires extra steps of iteration.
+# - A method returns the arguments that are provided when calling the method.
+# - You can pass strings and integers into methods as arguments, as long as those arguments are defined within the method (or within a previous method you are calling from).
+# - You can pass information through methods by creating a variable and setting it equal to the method and the arguments you'd like to use. You can then use that new variable in the following methods.
+# - I believe I made great strides with passing information between methods as well as implicit return and how it can cause errors.
 
 
 
