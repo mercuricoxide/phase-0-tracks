@@ -43,12 +43,38 @@ end
 
 grocery_list = create_list("carrots apples cereal pizza")
 
-def add_item(grocery_list, new_item, qty)
+def add_item(grocery_list, new_item, qty=1)
   grocery_list[new_item] = qty
   return grocery_list
 end
 
 puts add_item(grocery_list,"orange", 2)
+
+def remove_item(grocery_list, item)
+  grocery_list.delete(item)
+  return grocery_list
+end
+
+#puts remove_item(grocery_list, "orange")
+
+def modify_item(grocery_list, item, qty)
+  grocery_list[item] = qty
+  return grocery_list
+end
+
+puts modify_item(grocery_list,"orange", 1)
+
+def print_list(grocery_list)
+  puts "#########################"
+  puts "Here is your grocery list"
+  grocery_list.each do |item, qty|
+    puts "Buy #{qty} #{item}"
+  end
+  puts "#########################"
+end
+
+print_list(grocery_list)
+
 
 
 
