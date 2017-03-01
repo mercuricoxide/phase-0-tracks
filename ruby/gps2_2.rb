@@ -28,3 +28,33 @@
 # input: list
 # steps: create method to print the hash, and add lines and banners to separate and make more readable.
 # output: the previous hash updated with lines/banners and made more readable.
+
+def create_list(list)
+  groceries = {}
+  array = list.split(" ")
+  qty = 1
+  array.each do |items|
+    groceries[items] = qty
+  end
+  return groceries
+end
+
+# puts create_list("carrots apples cereal pizza")
+
+grocery_list = create_list("carrots apples cereal pizza")
+
+def add_item(grocery_list, new_item, qty)
+  grocery_list[new_item] = qty
+  return grocery_list
+end
+
+puts add_item(grocery_list,"orange", 2)
+
+
+
+
+
+
+
+
+
