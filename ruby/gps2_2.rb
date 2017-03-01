@@ -1,27 +1,30 @@
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps: 
-  # [fill in any steps here]
-  # set default quantity
+  # create a method to create a list that takes in a string of items as a parameter.
+  # create an empty hash for the item and quantities to be passed into later.
+  # convert string into an array
+  # set default quantity of 1
+  # map quantity of 1 to each item and then pass data into empty hash.
   # print the list to the console [can you use one of your other methods here?]
-# output: [what data type goes here, array or hash?]
+# output: hash
 
 # Method to add an item to a list
 # input: list, item name, and optional quantity
-# steps:
-# output:
+# steps: create a method that takes item and quantity as parameter and pass into hash from previous method.
+# output: hash updated with the new item.
 
 # Method to remove an item from the list
-# input:
-# steps:
-# output:
+# input: list, item name.
+# steps: create a method that takes item as parameter and removes it from the hash
+# output: hash updated with th item removed
 
 # Method to update the quantity of an item
-# input:
-# steps:
-# output:
+# input: list, item name, and quantity.
+# steps: create method that takes item and quantity as parameter and changes the quantity.
+# output: hash updated with a new quantity for the item.
 
 # Method to print a list and make it look pretty
-# input:
-# steps:
-# output:
+# input: list
+# steps: create method to print the hash, and add lines and banners to separate and make more readable.
+# output: the previous hash updated with lines/banners and made more readable.
