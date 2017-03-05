@@ -1,6 +1,6 @@
 class Santa
-  attr_reader :age, :ethnicity, :sleigh, :weight
-  attr_accessor :gender, :reindeer_ranking
+  attr_reader :ethnicity, :sleigh
+  attr_accessor :gender, :reindeer_ranking, :age, :weight_pounds
 
   def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
@@ -20,14 +20,14 @@ class Santa
   end
 
 
-  def initialize(gender, ethnicity, sleigh, weight)
-    puts "Initializing Santa instance ..."
+  def initialize(gender, ethnicity, sleigh, weight_pounds)
+    #puts "Initializing Santa instance ..."
     @gender = gender
     @ethnicity = ethnicity
     @reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
     @age = 0
     @sleigh = sleigh
-    @weight = weight
+    @weight_pounds = weight_pounds
   end
 
 #getter methods for attributes
@@ -48,7 +48,9 @@ class Santa
 
 end
 
-#driver code
+
+##### DRIVER CODE
+
 
 #japanese_santa = Santa.new
 #japanese_santa.eat_milk_and_cookies("green tea")
@@ -75,20 +77,33 @@ end
 
 # p santas
 
-bobby = Santa.new("male", "black", "yew", 180)
+# bobby = Santa.new("male", "black", "yew", 180)
 
-p bobby
-p bobby.get_mad_at("Prancer")
-p bobby.celebrate_birthday
+# p bobby
+# p bobby.get_mad_at("Prancer")
+# p bobby.celebrate_birthday
 
-# santas = []
-# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
-# example_sleighs = ["holly", "birch", "yew", "mahogany", "ebony", "oak", "cherry"]
-# example_weights_pounds = [250, 180, 200, 140, 400, 1500, 10]
+santas = []
+gender = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+ethnicity = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+sleigh = ["holly", "birch", "yew", "mahogany", "ebony", "oak", "cherry"]
+weight_pounds = [250, 180, 200, 140, 400, 1500, 10]
 
+50.times do 
+  santas << Santa.new(gender.sample, ethnicity.sample, sleigh.sample, weight_pounds.sample)
+end
 
 # p santas
+
+bobby = Santa.new(gender.sample, ethnicity.sample, sleigh.sample, weight_pounds.sample)
+
+p bobby
+
+p bobby.gender
+
+bobby.age = rand(140)
+
+p bobby.age
 
 
 
