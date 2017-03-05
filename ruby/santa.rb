@@ -1,4 +1,6 @@
 class Santa
+  attr_reader :age, :ethnicity, :sleigh, :weight
+  attr_accessor :gender, :reindeer_ranking
 
   def speak
     puts "Ho, ho, ho! Haaaappy holidays!"
@@ -30,21 +32,23 @@ class Santa
 
 #getter methods for attributes
 
-  def age
-    @age
-  end
+  # def age
+  #   @age
+  # end
 
-  def ethnicity
-    @ethnicity
-  end
+  # def ethnicity
+  #   @ethnicity
+  # end
 
 #setter methods for attributes
 
-  def gender=(new_gender)
-    @gender = new_gender
-  end
+  # def gender=(new_gender)
+  #   @gender = new_gender
+  # end
 
 end
+
+#driver code
 
 #japanese_santa = Santa.new
 #japanese_santa.eat_milk_and_cookies("green tea")
@@ -75,6 +79,16 @@ bobby = Santa.new("male", "black", "yew", 180)
 
 p bobby
 p bobby.get_mad_at("Prancer")
+p bobby.celebrate_birthday
+
+# santas = []
+# example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+# example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+# example_sleighs = ["holly", "birch", "yew", "mahogany", "ebony", "oak", "cherry"]
+# example_weights_pounds = [250, 180, 200, 140, 400, 1500, 10]
+
+
+# p santas
 
 
 
