@@ -14,11 +14,10 @@ class TodoList
 
   def delete_item(item)
     @todo_list.delete(item)
-    @todo_list
   end
 
   def get_item(item_index)
     @todo_list[item_index] 
   end
-  
+
 end
