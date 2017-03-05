@@ -1,10 +1,7 @@
 class TodoList
+  
   def initialize(todo_list)
     @todo_list = todo_list
-  end
-  
-  def get_item(index_to_retrieve)
-    @todo_list[index_to_retrieve]
   end
 
   def get_items
@@ -15,12 +12,13 @@ class TodoList
     @todo_list << new_item
   end
 
-  def delete_item(item_to_delete)
-    index_to_delete = @todo_list.index(item_to_delete)
-    @todo_list.delete_at(index_to_delete)
+  def delete_item(item)
+    @todo_list.delete(item)
+    @todo_list
   end
-end
 
-todo_items = ["do the dishes", "mow the lawn"]
-new_todo_list = TodoList.new(todo_items)
-puts new_todo_list.get_items
+  def get_item(item_index)
+    @todo_list[item_index] 
+  end
+  
+end
