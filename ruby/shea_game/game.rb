@@ -8,8 +8,6 @@ class WordGuessingGame
     @user_guess = ["morning", "poop", "zebra", "corn", "feet", "sky"]
   end
 
-#Don't know how to make this work properly.
-
   def feedback
     display_string = ""
       @correct_guess.chars.each do |char|
@@ -34,14 +32,15 @@ class WordGuessingGame
 
 end
 
-#user interface
+#User Interface
+def user_interface
+  puts "Welcome to the Word Guessing Game!"
+  game = WordGuessingGame.new
+  puts "Try to guess the word!"
+  puts game.check_word
+end
 
-puts "Welcome to the Word Guessing Game!"
-game = WordGuessingGame.new
-
-puts "Try to guess the word!"
-
-puts game.check_word
+puts user_interface
 
 
 
