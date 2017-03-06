@@ -27,7 +27,7 @@ class Angry
 end
 
 happy = Happy.new
-happy.yell("yay", " :D")
+happy.yell("Yay", " :D")
 
 angry = Angry.new
-angry.yell("nooooo", " :(")
+angry.yell("Nooooo", " :(")
