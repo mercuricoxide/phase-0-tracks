@@ -3,6 +3,7 @@
 //use the reverse method to reverse the array
 //use the join method to turn the array back into a string
 
+
 function reverse(word) {
   var makeArray = word.split("")
   var reverseArray = makeArray.reverse();
